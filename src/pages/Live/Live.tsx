@@ -1,7 +1,5 @@
 import Categories from "../../components/filters/categories";
 import Vertvideocards from "../../components/video/vertvideocards";
-import LiveChannels from "../../components/video/livechannels";
-import Biblestudy from "../../components/video/biblestudy";
 import PageMeta from "../../components/common/PageMeta";
 
 
@@ -17,14 +15,6 @@ export default function live() {
               <Categories/>
     
               <Vertvideocards />
-            </div>
-    
-            <div className="col-span-12">
-              <LiveChannels />
-            </div>
-    
-            <div className="col-span-12">
-              <Biblestudy />
             </div>
           </div>
         </>
