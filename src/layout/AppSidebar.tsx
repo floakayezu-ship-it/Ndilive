@@ -6,6 +6,7 @@ import {
   ChevronDownIcon,
   GridIcon,
   HorizontaLDots,
+  LiveIcon,
   UserCircleIcon,
 } from "../icons";
 import { useSidebar } from "../context/SidebarContext";
@@ -24,14 +25,14 @@ const navItems: NavItem[] = [
     path: "/"
   },
   {
-    icon: <GridIcon />,
+    icon: <LiveIcon />,
     name: "Live",
     path: "/live",
   },
   {
     icon: <CalenderIcon />,
     name: "Upcoming Events",
-    path: "/calendar",
+    path: "/upcoming-events",
   },
   {
     icon: <UserCircleIcon />,

@@ -1,4 +1,6 @@
 import { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 
 const liveChannels = [
   { id: 1, church: "Christ the Light Church", service: "Sunday Worship Service", viewers: "1.2k", thumbnail: "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?w=400&h=225&fit=crop" },
@@ -14,6 +16,7 @@ const liveChannels = [
 
 export default function StatisticsChart() {
   const scrollRef = useRef<HTMLDivElement | null>(null);
+  const navigate = useNavigate();
   const [showLeft, setShowLeft] = useState(false);
   const [showRight, setShowRight] = useState(true);
 
@@ -43,10 +46,13 @@ export default function StatisticsChart() {
         <h2 className="text-lg font-bold text-gray-900 dark:text-white">
           Live Now
         </h2>
-        <button className="flex items-center gap-1 text-sm font-medium text-red-500 hover:text-red-600 transition-colors">
+         {/* See All button — navigates to /live */}
+        <button
+          onClick={() => navigate("/live")}
+        className="flex items-center gap-1 text-sm font-medium text-red-500 hover:text-red-600 transition-colors">
           See All
           <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="m9 18 6-6-6-6" />
+            <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M13 6l6 6-6 6" />
           </svg>
         </button>
       </div>

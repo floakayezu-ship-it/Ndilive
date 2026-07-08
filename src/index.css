@@ -208,7 +208,7 @@ layer(base);
 }
 
 @utility menu-item-active {
-  @apply bg-brand-50 text-brand-500 dark:bg-brand-500/[0.12] dark:text-brand-400;
+  @apply bg-brand-50 text-brand-500 dark:bg-white/[0.08] dark:text-white;
 }
 
 @utility menu-item-inactive {
@@ -220,7 +220,7 @@ layer(base);
 }
 
 @utility menu-item-icon-active {
-  @apply text-brand-500 dark:text-brand-400;
+  @apply text-brand-500 dark:text-white;
 }
 
 @utility menu-item-icon-size {
@@ -870,10 +870,10 @@ span.flatpickr-weekday,
 }
 
 .dark .menu-item-active {
-  background-color: rgba(229, 9, 20, 0.12) !important;
-  color: #E50914 !important;
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  color: #ffffff !important;
 }
 
 .dark .menu-item-icon-active {
-  color: #E50914 !important;
+  color: #ffffff !important;
 }

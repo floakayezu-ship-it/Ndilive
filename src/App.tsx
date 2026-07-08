@@ -18,6 +18,8 @@ import Blank from "./pages/Blank";
 import AppLayout from "./layout/AppLayout";
 import { ScrollToTop } from "./components/common/ScrollToTop";
 import Home from "./pages/Dashboard/Home";
+import Live from "./pages/Live/Live";
+import Upcomingevents from "./pages/UpcomingEvents/upcomingevents";
 
 export default function App() {
   return (
@@ -36,6 +38,12 @@ export default function App() {
 
             {/* Forms */}
             <Route path="/form-elements" element={<FormElements />} />
+
+            {/* Live */}
+            <Route path="/live" element={<Live />} />
+
+             {/* Upcoming Events */}
+            <Route path="/upcoming-events" element={<Upcomingevents />} />
 
             {/* Tables */}
             <Route path="/basic-tables" element={<BasicTables />} />
